@@ -1,1 +1,15 @@
 # game2048
+
+This is a programme for the game 2048. It can be played in boards with different sizes: 4x4, 5x5, 6x6, 7x7, 8x8, 9x9, 10x10.
+The game starts with a menu which gives the player 3 options: 1) Start game 2)Leaderboard 3)Quit. If the player chooses 1) the game wants him to write their nickname and to choose which board they wand to use.
+In the code there is a function that generates random numbers(2 or 4) at random positions and a function that prints the board. 
+There are also functions for the movements of the numbers: up, down, left and right. T
+he function getScore calculates the score of the player(the sum of the numbers on the board).
+The function isGameOver checks if we have zeros on the boards and if there are possible movements.
+The function hasWon checks if the player has reached the number 2048.
+The function generateLeaderboardName generates the name of the leaderboard for the size of the board we have chosen.
+The function updateLeaderboard updates the leaderboard with the data from the game.
+the functhion showLeaderboard prints the leaderboard with the top 5 players, or if there are less than 5 with all the players(in the size of the board we have chosen).
+The function showManu prints the menu of the geme.
+The function startGame is the main function we use to play the game. It wants the user to input their nickname and the size of the board they want. Then if the user inputs a size between 4 and 10 it generates the board with two random numbers. In the while loop it is checked whether the game is over(with the isGameOver function) and whether the player has won(with the hasWon function). While these two function return false, the board is printed and the programme wants the user to input their move(w-for up, s-for down, a-for left and d-for right). If the user inputs one of these symbols the numbers are moved according to the moveUp, moveDown, moveLeft and moveRight function and with each movement a new number is generated. If the user inputs a wrong symbol the programme asks them to input a another symbol. If the user wins they can see a message containing their score. If there are no more possible movements the user receives a message that they have lost and their final score. After the end of each game the file with the leaderboard is updated. If the user has entered a size that is not between 4 and 10 they receive a message that their input is incorrect.
+In the main the function showMenu is used to print the menu and ask the user to choose from the 3 options. If they input 1 then the game starts. If they input 2 then they are asked to enter the size of the board for which they want to see the leaderboard. If it is between 4 and 10 then the top 5 on the leaderboard are shown, or if there are less than 5 people on the leaderboard than we see all of them and their score. If the user enters a number that is not between 4 and 10 then they receive a message that their input is invalid. If the user choses the third option that he exites the game.
