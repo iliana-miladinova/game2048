@@ -1,7 +1,7 @@
 # game2048
 
 This is a programme for the game 2048. It can be played in boards with different sizes: 4x4, 5x5, 6x6, 7x7, 8x8, 9x9, 10x10.
-The game starts with a menu which gives the player 3 options: 1) Start game 2)Leaderboard 3)Quit. If the player chooses 1) the game wants him to write their nickname and to choose which board they wand to use.
+The game starts with a menu which gives the player 3 options: 1) Start game 2)Leaderboard 3)Quit. If the player chooses 1) the game wants them to write their nickname and to choose which board they wand to use.
 In the code there is a function that generates random numbers(2 or 4) at random positions and a function that prints the board. 
 There are also functions for the movements of the numbers: up, down, left and right. T
 he function getScore calculates the score of the player(the sum of the numbers on the board).
